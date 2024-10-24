@@ -1,0 +1,23 @@
+.custom-dropdown-menu {
+  border: 1px solid #1890ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  border-radius: 8px; 
+  position: relative;
+  z-index: 1000;
+}
+.custom-dropdown-content {
+  padding: 16px;
+  z-index:999; 
+}
+
+.ant-select-dropdown {
+  z-index: 2000;  
+}
+.ant-picker-dropdown {
+  z-index: 2000;  
+}
+
+.ant-badge{
+  z-index: 3000;  
+}

@@ -1,0 +1,42 @@
+.report-box {
+  border-top-width: 3px;
+  border-top-style: solid;
+  height: max-content;
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+
+  &__heading {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* styles for ellipsis '…' */
+.block-with-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.report-box-tag {
+  font-size: 13px;
+  padding: 2px 5px;
+  margin-right: 5px;
+}
+
+.report-box-tag.clickable {
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

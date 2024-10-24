@@ -1,0 +1,122 @@
+$blue-color: #d2e3fc;
+$red-color: #ffecb3;
+$green-color: #c8e6c9;
+
+.container {
+  & :global {
+    .rmdp-container{
+      width: 100%;
+    }
+
+    .rmdp-day.rmdp-today span {
+      color: black !important;
+      background-color: white !important;
+      border: 1px solid #4285f4;
+    }
+
+    .rmdp-range {
+      background-color: white;
+      box-shadow: 0 0 3px white;
+    }
+    .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden).blue-temp span:hover {
+      background-color: $blue-color;
+    }
+    .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden).red-temp span:hover {
+      background-color: $red-color;
+    }
+    // .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+    //   background-color: white;
+    //   color: black;
+    // }
+    .rmdp-day.rmdp-today span {
+      background-color: white;
+    }
+
+    .rmdp-range:has(.red) {
+      background-color: $red-color;
+      box-shadow: 0 0 3px $red-color;
+      color: black;
+    }
+    .rmdp-day.rmdp-today:has(.red) span {
+      background-color: $red-color;
+    }
+
+    .rmdp-range:has(.blue) {
+      background-color: $blue-color;
+      box-shadow: 0 0 3px $blue-color;
+      color: black;
+    }
+    .rmdp-day.rmdp-today:has(.blue) span {
+      background-color: $blue-color !important;
+
+      &:hover {
+        background-color: #1a73e8 !important;
+        color: white !important;
+      }
+    }
+
+    .rmdp-range:has(.green) {
+      background-color: $green-color;
+      box-shadow: 0 0 3px $green-color;
+      color: black;
+    }
+    .rmdp-day.rmdp-today:has(.green) span {
+      background-color: $green-color;
+    }
+  }
+}
+
+.available-time {
+  width: 150px;
+  height: max-content;
+
+  &__row {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: max-content !important;
+    padding: 3px 5px;
+    color: #6e7277;
+
+    &:hover {
+      background-color: #9e9e9e33;
+      cursor: pointer;
+    }
+  }
+}
+
+.checked {
+  color: #1a73e8 !important;
+  font-weight: bold;
+}
+
+.checked-compare {
+  color: #d56e0c !important;
+  font-weight: bold;
+}
+
+.first-chosen {
+  background-color: $blue-color;
+}
+
+.sec-chosen {
+  background-color: $red-color;
+}
+
+.tag {
+  cursor: pointer;
+  padding: 5px 15px;
+  width: 100%;
+
+  &__first {
+    font-weight: bold;
+    font-size: 14px;
+    color: #5F6368;
+  }
+
+  &__sec {
+    font-size: 12px;
+    color: #5F6368;
+  }
+}

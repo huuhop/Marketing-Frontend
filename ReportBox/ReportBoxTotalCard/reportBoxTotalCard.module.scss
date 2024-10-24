@@ -1,0 +1,55 @@
+.wrapper {
+  padding: 12px 10px 8px;
+  border-radius: 5px;
+  margin: 15px 0;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.32);
+  cursor: pointer;
+  transition: filter 0.15s linear;
+  position: relative;
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+}
+
+.total {
+  // font-size: 26px;
+  display: inline-block;
+  line-height: 1.2;
+  margin-right: 5px;
+}
+
+.title {
+  text-align: right;
+  // font-size: 14px;
+  width: 100%;
+  display: inline-block;
+}
+
+.description {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.desangle {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  border-radius: 0px 0px 5px;
+  overflow: hidden;
+}
+
+.desico {
+  position: absolute;
+  right: 3px;
+  bottom: -1px;
+  display: flex;
+  border-radius: 0px 0px 5px;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  font-weight: 400;
+  color: white;
+}
